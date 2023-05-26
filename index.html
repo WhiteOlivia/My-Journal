@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      My Journal
+    </title> 
+    <style>
+      /*Fonts*/
+     @import url('https://fonts.googleapis.com/css2?family=Jost&family=Kalam:wght@300&display=swap');
+      nav {
+        background-color:#a28b85;
+        color: #564b48;
+        text-align: center;
+        font-size: 29px;
+        
+        padding: 7px;
+      }
+      /* body*/
+      * {
+        padding: 0 ;
+       margin: 0 ;
+      }
+      body {
+    font-family: 'Kalam', cursive;
+        margin-left: 0;
+        padding: 0;
+      }
+      /*Headings*/
+ h1,h2,h3 {
+       font-family: 'Jost', sans-serif;
+ }
+    /*Images*/
+   img {
+     width: 250px; 
+     margin-top: 15px;    
+ border: 3px outset #edefed;
+   }  
+
+   /* Journal Entries */
+   .entries {
+     padding: 20px 20px;
+     color:#9cb29a;
+     margin: 2% 3%;
+     border: 3px solid #9fa394;
+   background-color: #c9d3c8;
+   }
+      .entries:nth-child(even){
+        background-color: #e6dae4;
+        color: #c2aabf;
+      }
+      /*button*/
+      button {
+        background-color: #d4bcb2 ;
+        color: #f5f2f0 ;
+        font-size: 15px ;
+        padding: 5px 15px ;
+        border-radius: 20px ;
+        margin: 2% 5% 5% auto;
+        float: right ;
+        font-weight: 550 ;
+      }
+        /* Secret Texts */
+        #secret1p,#secret2p,#secret3p,#secret4p,#secret5p,#secret6p {
+          display: none;
+        }
+      
+  
+      /*Footer*/
+      footer {
+        background-color: #a28b85;
+        color: #564b48;
+        text-align: center;
+        left: 0;
+        bottom: 0; 
+        width: 100%;
+       padding: 20px 0 ;
+        font-size: 25px;      
+      }
+    
+    </style>
+  </head>              
+<!--body-->
+  <body>
+    <nav>
+     
+   <h1>
+     My Journal
+    
+   </h1> 
+    </nav>
+    <main> 
+ 
+      <!--Gecko-->
+     <div class="entries">
+       <h1>
+         Taking home a sick gecko - 04/01/2023
+       </h1>
+       <p>
+        There was a sick leopard gecko called Peper in my science class. A friend who was in charge of her couldn't take her home so she asked me to. I said yes and got Pepper to eat. Although she is really sick, I was able to search ways to take care of her through the help of Google. 
+       </p>
+       <Img src="Img/gecko" alt= "Picture of Leapord Gecko" width=250/>
+       <br />
+      <!--Button id--> 
+       <button id= "secret1btn" onclick="secret1reveal()">
+         Show Top Secret
+       </button>
+       <br />                                                                      <p id= "secret1p"> 
+         I didn't actually get her to eat a lot--just a little.
+       </p>
+     </div>
+      <!--Frog-->
+      <div class= "entries">
+        <h1>
+          Feeding my Frog - 04/02/2023
+        </h1>
+        <p>
+          After showering at 9:30, I still hadn't fed my frogs. I tried to feed them quickly since I was sleepy. Once I was done, it was around 10:00 pm meaning that I spent 30 minutes trying to feed all of my frogs. I quickly went to bed afterwords.
+        </p>
+        <img src="Img/frog" alt= "Picture of Frog" width=250 />
+        <br/>
+        <button id = "secret2btn" onclick="secret2reveal()">Show Top Secret
+        </button>
+        <br/>
+        <p id= "secret2p">
+          I actualy didn't go to sleep after since I forgot to feed my fish too. I also did other stuff making me sleep late. 
+        </p>
+      </div>
+      <!--Easter-->
+      <div class="entries">
+        <h1>
+          Getting Prepared - 04/09/2023
+        </h1>
+        <p>
+          Today was Easter so I went to Sunday. I was supposed to go to my relatives' houses but tommorow I'm going to be going to Hume Lake to camp. I hadn't gotten packed up yet so I slept late preparing.
+        </p>
+        <img src="Img/Easter" alt= "Picture of Easter bunny"/>
+        <br/>
+        <button id = "secret3btn" onclick="secret3reveal()">
+          Show Top Secret
+        </button>
+        <br/>
+        <p id= "secret3p">
+          I actualy didn't get everything packed so I had some of the packing the next morning. 
+        </p>
+      </div>
+      <!--At Hume-->
+      <div class="entries">
+        <h1>
+          Being at Hume - 04/10-15/2023
+        </h1>
+        <p>
+          Going to Hume was great. Our school got a really confy bus and I got to sit next to the window (although not with my friends). At Hume I was in the same cabin as two of my friends which was great. I made new friends and had a overall great time. 
+        </p>
+        <img src="Img/Cabin" alt= "Picture of a Cabin" width=260 />
+        <br/>
+        <button id = "secret4btn" onclick="secret4reveal()">
+          Show Top Secret
+        </button>
+        <br/>
+        <p id= "secret4p">
+          I had a great time... Except for when I tried rockcliming and found out that I really have a fear of hights.
+        </p>
+      </div>
+      <!--Coming back-->
+      <div class="entries">
+        <h1>
+          Coming back from camping - 04/15/2023
+        </h1>
+        <p> 
+          Coming back to Hume was amazing! I got to sit next to my best friend and we had a really fun time. I really missed my mom and dad so seeing them was great too. 
+        </p>
+        <img src="Img/bus" alt= "Picture of a bus" width=250 />
+        <br/>
+        <button id = "secret5btn" onclick="secret5reveal()">
+          Show Top Secret
+        </button>
+        <br/>
+        <p id= "secret5p">
+          Across the isle there were boys that were stuffing cookies into a drink. They tried to make me drink it but I didn't. 
+        </p>
+      </div>
+      <!--My Poor Fish Tank!-->
+      <div class="entries">
+        <h1>
+          My poor fishtank!
+        </h1>
+        <p>
+          I was feeding my frogs dried blood worms when it suddenly poored all over my fishtank. There was at least a centimeter think layer of food on the water sinking down. Since letting it be would cause the water to be dirty and my fish unhealthy, I had to scoop everything out!
+        </p>   
+        <img src="Img/cleaning" alt= "Picture of someone cleaning" width=250 />
+        <br/>
+        <button id = "secret6btn" onclick="secret6reveal()">
+          Show Top Secret
+        </button>
+        <br/>
+        <p id= "secret6p">
+          It took me one hour to do this. Not only did I have to do this but I had to pack up for school! I ended up sleeping around 12:00am to 1:00 am.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Made by Olivia White, ©2023©
+      </p>
+    </footer>
+    <!--Java script-->
+    <script>
+      function secret1reveal() {
+       var secret1p = document.querySelector("#secret1p");
+       var secret1btn = document.querySelector("#secret1btn");
+       if (secret1p.style.display == "none") {
+         secret1p.style.display = "block";
+         secret1btn.innerHTML = "Hide Top Secret";
+       }
+        else {
+          secret1p.style.display = "none";
+          secret1btn.innerHTML = "Show Top Secret";
+        }
+      }
+      function secret2reveal() {
+       var secret2p = document.querySelector("#secret2p");
+       var secret2btn = document.querySelector("#secret2btn");
+       if (secret2p.style.display == "none") {
+         secret2p.style.display = "block";
+         secret2btn.innerHTML = "Hide Top Secret";
+       }
+        else {
+          secret2p.style.display = "none";
+          secret2btn.innerHTML = "Show Top Secret";
+        }
+      }
+ function secret3reveal() {
+       var secret3p = document.querySelector("#secret3p");
+       var secret3btn = document.querySelector("#secret3btn");
+       if (secret3p.style.display == "none") {
+         secret3p.style.display = "block";
+         secret3btn.innerHTML = "Hide Top Secret";
+       }
+        else {
+          secret3p.style.display = "none";
+          secret3btn.innerHTML = "Show Top Secret";
+        }
+      }
+      function secret4reveal() {
+       var secret4p = document.querySelector("#secret4p");
+       var secret4btn = document.querySelector("#secret4btn");
+       if (secret4p.style.display == "none") {
+         secret4p.style.display = "block";
+         secret4btn.innerHTML = "Hide Top Secret";
+       }
+        else {
+          secret4p.style.display = "none";
+          secret4btn.innerHTML = "Show Top Secret";
+        }
+      }
+   function secret5reveal() {
+       var secret5p = document.querySelector("#secret5p");
+       var secret5btn = document.querySelector("#secret5btn");
+       if (secret5p.style.display == "none") {
+         secret5p.style.display = "block";
+         secret5btn.innerHTML = "Hide Top Secret";
+       }
+        else {
+          secret5p.style.display = "none";
+          secret5btn.innerHTML = "Show Top Secret";
+        }
+      }
+      function secret6reveal() {
+       var secret6p = document.querySelector("#secret6p");
+       var secret6btn = document.querySelector("#secret6btn");
+       if (secret6p.style.display == "none") {
+         secret6p.style.display = "block";
+         secret6btn.innerHTML = "Hide Top Secret";
+       }
+        else {
+          secret6p.style.display = "none";
+          secret6btn.innerHTML = "Show Top Secret";
+        }
+      }
+    </script>
+  </body>
+</html>
